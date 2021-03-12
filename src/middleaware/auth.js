@@ -19,7 +19,7 @@ const auth = async (req, res, next)=>{
         next()
     }
     catch(e){
-        res.status(400).send(e)
+        res.status(400).send(e.message)
     }
 }
 
